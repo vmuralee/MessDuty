@@ -8,6 +8,8 @@ from MessDuty import *
 
 '''
 
+isPaapad = True  # Check the boolean with your specific day
+isSaalad = True  # Check the boolean with your specific day
 
 print('='*15,' BreakFast ','='*15)   
 breakfast = BreakFast(nBread=10,nEggs=23,nKela=24,nTea=10,nMilk=10,nIndian=43)     
