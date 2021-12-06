@@ -34,9 +34,6 @@ DinnerBaaji_dict  = json.load(file4)
 DinnerNonVeg_dict = json.load(file5)
 DinnerSplVeg_dict = json.load(file6)
 
-isPaapad = True
-isSaalad = True
-
 
 class BreakFast:
     def __init__(self,nBread,nEggs,nKela,nTea,nMilk,nIndian):
