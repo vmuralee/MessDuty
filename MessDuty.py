@@ -97,7 +97,9 @@ class BreakFast:
 
     
 class Lunch:
-    def __init__(self,day,nBaseMeal,nRoti,nExtraFry,nDahi,nSplVeg,nSplNonVeg):
+    def __init__(self,day,nBaseMeal,nRoti,nExtraFry,nDahi,nSplVeg,nSplNonVeg,isPaapad,isSaalad):
+        self.isPaapad = isPaapad
+        self.isSaalad = isSaalad
         self.TotBaseMeal = nBaseMeal + 4 + 2
         self.TotSplVeg = nSplVeg
         self.TotNonVeg = nSplNonVeg + 4
@@ -130,9 +132,9 @@ class Lunch:
             Qty = qty*self.TotBaaji
             print(f'{veg} needs {Qty/1000} Kg')
 
-    def CalcSalad(self,day,isSaalad=False):
+    def CalcSalad(self,day):
         SaaladDict = LunchBaaji_dict[day]['Salaad']
-        if isSaalad == True:
+        if self.isSaalad == True:
             print('Kakkudi : 1 kg')
             print('Gajar   : 1 Kg')
             print('Lemon   : 7 pieces')
@@ -164,7 +166,7 @@ class Lunch:
         self.CalcRiceAndRoti()
         self.CalcDaalAndPapad(day)
         self.CalcBaaji(day)
-        self.CalcSalad(day,isSaalad)
+        self.CalcSalad(day)
         self.CalcSplNonVeg(day)
         self.CalcSplVeg(day)
 
@@ -172,7 +174,7 @@ class Lunch:
         print("*"*15,"Today's Menu","*"*15)
         print(f'Base Meal for Lunch {self.TotBaseMeal-4} + 4 = {self.TotBaseMeal}')
         print(f'No. of Roti for Lunch {self.TotRoti}')
-        if(isPaapad == True):
+        if(self.isPaapad == True):
             print(f'No. of Paapad is {self.nPapad}')
         baajiName = LunchBaaji_dict[day]['Name']
         print('No. Dahi packets ',self.TotDahi)
