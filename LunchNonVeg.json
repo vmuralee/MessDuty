@@ -1,0 +1,31 @@
+{
+    "Sunday":{
+        "Name":"Fish-Sabji-Jhol",
+        "Ingridients":{"Fish":125,"Papita":15,"Patal":10,"Gajar":5}
+    },
+    "Monday":{
+        "Name":"Mustard Fish",
+        "Ingridients":{"Fish":125}
+    },
+    "Tuesday":{
+        "Name":"Fish Curry",
+        "Ingridients":{"Fish":125}
+    },
+    "Wednesday":{
+        "Name":"Fish Curry",
+        "Ingridients":{"Fish":125}
+    },
+    "Thursday":{
+        "Name":"Chicken Hydrabadi",
+        "Ingridients":{"Chicken":150}
+    },
+    "Friday":{
+        "Name":"Dahi Fish",
+        "Ingridients":{"Fish":125,"Dahi":35}
+    },
+    "Saturday":{
+        "Name":"Chicken Masala",
+        "Ingridients":{"Chicken":150}
+    }
+    
+}

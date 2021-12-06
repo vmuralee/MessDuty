@@ -1,0 +1,52 @@
+{
+    "Sunday":{
+        "Name":"Parbal Fry",
+        "Desert Name":"Gajjar Halwa",
+        "Ingridients":{"Parbal":100},
+        "Daal" : {"Buta Dal": 30},
+        "Dessert":{"Gajjar":50,"Milk":25}
+    },
+    "Monday":{
+        "Name":"Baragadi Fry",
+        "Desert Name":"Elephant Apple Chatnuy",
+        "Ingridients":{"Baragadi":100},
+        "Daal" : {"Moong Dal": 30},
+        "Dessert":{"Elephant Apple":75}
+    },
+    "Tuesday":{
+        "Name":"Sem Fry",
+        "Desert Name":"Gluab Jamun",
+        "Ingridients":{"Sem":100},
+        "Daal" : {"Masoor Dal": 30},
+        "Dessert":{"Sweets":0}
+    },
+    "Wednesday":{
+        "Name":"Drumstick-kela Fry",
+        "Desert Name":"Semai Payas",
+        "Ingridients":{"Drumstick":50,"kela":50},
+        "Daal" : {"Buta Dal": 30},
+        "Dessert": {"Semai":10,"Milk":50}
+    },
+    "Thursday":{
+        "Name":"Beetroot Fry",
+        "Desert Name":"Rasagulla",
+        "Ingridients":{"Beetroot":100,"Coconut":0.0},
+        "Daal" : {"Moong Dal": 30},
+        "Dessert":{"Sweets":0}
+    },
+    "Friday":{
+        "Name":"Bhindi Fry",
+        "Desert Name":"Veg Soup",
+        "Ingridients":{"Bhindi":125},
+        "Daal" : {"Maa ki Dal": 30},
+        "Dessert":{"Corn":20,"Greenpeas":10,"Gobi":10}
+    },
+    "Saturday":{
+        "Name":"Brinjal Fry",
+        "Desert Name":"Fruit Chutney",
+        "Ingridients":{"Brinjal":100},
+        "Daal" : {"Arhad Dal": 30},
+        "Dessert":{"Tommato":70}
+    }
+    
+}

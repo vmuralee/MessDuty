@@ -1,0 +1,30 @@
+{   "Sunday":{
+        "Name":"Tawa Bindi",
+        "Ingridients":{"Bhindi":135}
+    },
+    "Monday":{
+        "Name":"Rajma",
+        "Ingridients":{"Rajma":70}
+    },
+    "Tuesday":{
+        "Name":"Palak Paneer",
+        "Ingridients":{"Palak":60,"Paneer":75}
+    },
+    "Wednesday":{
+        "Name":"Kadi",
+        "Ingridients":{"Dahi":100,"gram Flour":35}
+    },
+    "Thursday":{
+        "Name":"Gobi-Alu Curry",
+        "Ingridients":{"Gobi":110}
+    },
+    "Friday":{
+        "Name":"Navarathna Korma",
+        "Ingridients":{"Gajar":35,"Capsicum":35,"Beans":35,"Paneer":25}
+    },
+    "Saturday":{
+        "Name":"Mushroom Curry",
+        "Ingridients":{"Mushroom":100}
+    }
+    
+}

@@ -1,0 +1,45 @@
+{
+    "Sunday":{
+        "Name" : "Karela Fry",
+        "Ingridients":{"karela":130},
+        "Daal" : {"Moong Dal": 30},
+        "Salaad":{"Kukkudi":"1 Kg","Gaajar":"1 Kg","Lemon":"7 pieces"}
+    },
+    "Monday":{
+        "Name" : "Alu-Kela Fry",
+        "Ingridients":{"kela":120},
+        "Daal" : {"Arhad Daal":35,"Patal":10,"Papita":20,"began":10,"beans":10},
+        "Salaad":{"Kukkudi":500,"Dahi":1500}
+    },
+    "Tuesday":{
+        "Name" : "Beans Fry",
+        "Ingridients":{"Beans":120},
+        "Daal" : {"Maa-ki-Daal":30},
+        "Salaad":{"Kukkudi":"1 Kg","Gaajar":"1 Kg","Lemon":"7 pieces"}
+    },
+    "Wednesday":{
+        "Name" : "Muli Saag",
+        "Ingridients":{"Muli":50,"kasla saag":50,"began":25,"beans":25},
+        "Daal":{"Arhad Daal":35,"Patal":10,"Papita":20,"began":10,"beans":10},
+        "Salaad":{"Kukkudi":"1 Kg","Gaajar":"1 Kg","Lemon":"7 pieces"}
+    },
+    "Thursday":{
+        "Name" : "Pui Saag",
+        "Ingridients":{"Pui Saag":100},
+        "Daal" : {"Masoor Dal": 30},
+        "Salaad":{"Dahi":70,"Ambula":30,"Boondi":35}
+    },
+    "Friday":{
+        "Name" : "Cabbage-Alu",
+        "Ingridients":{"Cabbage":150,"kaala chana":5},
+        "Daal" : {"Masoor Dal": 30},
+        "Salaad":{"Kukkudi":"1 Kg","Gaajar":"1 Kg","Lemon":"7 pieces"}
+    },
+    "Saturday":{
+        "Name" : "Saag-Moong-Bengan",
+        "Ingridients":{"kasala saag":100,"Began":35,"Moong dal":15},
+        "Daal" : {"Gota Masoor Dal": 30},
+        "Salaad":{"Badi Chuda":35}
+    }
+    
+}

@@ -1,0 +1,30 @@
+{
+    "Sunday":{
+        "Name":"Chicken Kosa",
+        "Ingridients":{"Chicken":150}
+    },
+    "Monday":{
+        "Name":"Egg-Alu-Jhol",
+        "Ingridients":{"Egg":0}
+    },
+    "Tuesday":{
+        "Name":"Chicken-Alu-Jhol",
+        "Ingridients":{"Chicken":125}
+    },
+    "Wednesday":{
+        "Name":"Chilly Chicken",
+        "Ingridients":{"Chicken":125,"Capsicum":20}
+        },
+    "Thursday":{
+        "Name":"Fish Fry",
+        "Ingridients":{"Fish":125}
+        },
+    "Friday":{
+        "Name":"Chicken Curry",
+        "Ingridients":{"Chicken":150}
+        },
+    "Saturday":{
+        "Name":"Egg Omlet",
+        "Ingridients":{"Egg":0}
+        }
+ }

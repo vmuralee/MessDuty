@@ -1,0 +1,31 @@
+{
+    "Sunday":{
+        "Name":"Shahi Paneer",
+        "Ingridients":{"Paneer":90,"Dahi":10}
+    },
+    "Monday":{
+        "Name":"Malai Kofta",
+        "Ingridients":{"Paneer":50,"Corn Flour":20}
+    },
+    "Tuesday":{
+        "Name":"Aloo-Jhinga Posto",
+        "Ingridients":{"Jhinga/Turai":150,"poppy seeds":5}
+    },
+    "Wednesday":{
+        "Name":"Chilly Mushroom",
+        "Ingridients":{"Mushroom":80,"Capsicum":25}
+        },
+    "Thursday":{
+        "Name":"Lauki-Chana curry",
+        "Ingridients":{"Lauki":135,"Kaala chana":15}
+        },
+    "Friday":{
+        "Name":"Chilli Gobi",
+        "Ingridients":{"Gobi":100,"Capsicum":20}
+        },
+    "Saturday":{
+        "Name":"Cabbage-peas",
+        "Ingridients":{"Cabbage":180,"Peas":15}
+        }
+    
+}

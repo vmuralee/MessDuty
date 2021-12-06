@@ -1,0 +1,33 @@
+{   
+    "Sunday":{
+        "Name":"Alu paratha-Dahi",
+        "Ingrediants":{"Atta":20,"Dahi":50}
+    },
+    "Monday":{
+        "Name":"Idli-Sambar",
+        "Ingrediants":{"Arhad dal":10,"Dum stick":5,"Began":5,"Bhindi":10}
+    },
+    "Tuesday":{
+        "Name":"Bada-ghugni",
+        "Ingrediants":{"Ghugni":15}
+    },
+    "Wednesday":{
+        "Name":"Upma-ghugni",
+        "Ingrediants":{"Suji":75,"Mattar":15}
+        },
+    "Thursday":{
+        "Name":"Veg Parata-Sabji",
+        "Ingrediants":{"Atta":80,"Methi":15}
+    },
+    "Friday":{
+        "Name":"Dalia",
+        "Ingrediants":{"Dalia":60,"Moong daal":30,"Green peas":10,"Gajjar":10,"Gobi":20}
+    },
+    "Saturday":{
+        "Name":"Mudi-dum Alu",
+        "Ingrediants":{"Mudi":100}
+    }
+    
+
+
+}
