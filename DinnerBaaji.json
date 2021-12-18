@@ -1,6 +1,8 @@
 {
     "Sunday":{
         "Name":"Parbal Fry",
+        "Spl_Base":"Fried Rice",
+        "SplBaseIngri":{"Beans":10,"CauliFlower":10,"Gajjar":10,"Green Peas":5},
         "Desert Name":"Gajjar Halwa",
         "Ingridients":{"Parbal":100},
         "Daal" : {"Buta Dal": 30},
@@ -8,6 +10,8 @@
     },
     "Monday":{
         "Name":"Baragadi Fry",
+        "Spl_Base":"None",
+        "SplBaseIngri":{},
         "Desert Name":"Elephant Apple Chatnuy",
         "Ingridients":{"Baragadi":100},
         "Daal" : {"Moong Dal": 30},
@@ -15,6 +19,8 @@
     },
     "Tuesday":{
         "Name":"Sem Fry",
+        "Spl_Base":"None",
+        "SplBaseIngri":{},
         "Desert Name":"Gluab Jamun",
         "Ingridients":{"Sem":100},
         "Daal" : {"Masoor Dal": 30},
@@ -22,6 +28,8 @@
     },
     "Wednesday":{
         "Name":"Drumstick-kela Fry",
+        "Spl_Base":"None",
+        "SplBaseIngri":{},
         "Desert Name":"Semai Payas",
         "Ingridients":{"Drumstick":50,"kela":50},
         "Daal" : {"Buta Dal": 30},
@@ -29,6 +37,8 @@
     },
     "Thursday":{
         "Name":"Beetroot Fry",
+        "Spl_Base":"None",
+        "SplBaseIngri":{},
         "Desert Name":"Rasagulla",
         "Ingridients":{"Beetroot":100,"Coconut":0.0},
         "Daal" : {"Moong Dal": 30},
@@ -36,6 +46,8 @@
     },
     "Friday":{
         "Name":"Bhindi Fry",
+        "Spl_Base":"None",
+        "SplBaseIngri":{},
         "Desert Name":"Veg Soup",
         "Ingridients":{"Bhindi":125},
         "Daal" : {"Maa ki Dal": 30},
@@ -43,6 +55,8 @@
     },
     "Saturday":{
         "Name":"Brinjal Fry",
+        "Spl_Base":"Kichadi",
+        "SplBaseIngri":{"Rice":80,"Moong Dal":80,"CauliFlower":10,"Beans":10,"Gajjar":5},
         "Desert Name":"Fruit Chutney",
         "Ingridients":{"Brinjal":100},
         "Daal" : {"Arhad Dal": 30},

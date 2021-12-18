@@ -55,34 +55,33 @@ class BreakFast:
         print(f'{self.totTea - 4} + 4 cups of Tea = {self.totTea} cups')
 
     def CalcDish(self,day):
-        if day in ['Monday','Tuesday']:
-            Dish = BreakFastDish_dict[day]['Name']
-            if day =='Monday':
-                print('Ingridents for  ',Dish)
-                NoIdli = self.nIndian*2
-                BatterFor1Idli = 1/17
-                BatterInKg = NoIdli*BatterFor1Idli
-                Rice=750*BatterInKg/1000
-                Biri=250*BatterInKg/1000
-                print(f'Non boil rice = {Rice} kg')
-                print(f'Biri Daal ={Biri} Kg')
-                DishDict = BreakFastDish_dict[day]['Ingrediants']
-                for ing,qty in DishDict.items():
-                    Qty = qty*self.nIndian
-                    print(f'{ing} : {Qty/1000} Kg')
-            elif day =='Tuesday':
-                print('Ingridents for  ',Dish)
-                NoBada = self.nIndian*2
-                BatterForBada = 1/17
-                BatterInKg = NoBada*BatterForBada
-                Rice=400*BatterInKg/1000
-                Biri=600*BatterInKg/1000
-                print(f'Non boil rice = {Rice} kg')
-                print(f'Biri Daal ={Biri} Kg')
-                DishDict = BreakFastDish_dict[day]['Ingrediants']
-                for ing,qty in DishDict.items():
-                    Qty = qty*self.nIndian
-                    print(f'{ing} : {Qty/1000} Kg')
+        Dish = BreakFastDish_dict[day]['Name']
+        if Dish =="Idli-Sambar":
+            print('Ingridents for  ',Dish)
+            NoIdli = self.nIndian*2
+            BatterFor1Idli = 1/17
+            BatterInKg = NoIdli*BatterFor1Idli
+            Rice=750*BatterInKg/1000
+            Biri=250*BatterInKg/1000
+            print(f'Non boil rice = {Rice} kg')
+            print(f'Biri Daal ={Biri} Kg')
+            DishDict = BreakFastDish_dict[day]['Ingrediants']
+            for ing,qty in DishDict.items():
+                Qty = qty*self.nIndian
+                print(f'{ing} : {Qty/1000} Kg')
+        elif Dish =="Bada-ghugni":
+            print('Ingridents for  ',Dish)
+            NoBada = self.nIndian*2
+            BatterForBada = 1/17
+            BatterInKg = NoBada*BatterForBada
+            Rice=400*BatterInKg/1000
+            Biri=600*BatterInKg/1000
+            print(f'Non boil rice = {Rice} kg')
+            print(f'Biri Daal ={Biri} Kg')
+            DishDict = BreakFastDish_dict[day]['Ingrediants']
+            for ing,qty in DishDict.items():
+                Qty = qty*self.nIndian
+                print(f'{ing} : {Qty/1000} Kg')
         else:
             DishDict = BreakFastDish_dict[day]['Ingrediants']
             for ing,qty in DishDict.items():
@@ -208,27 +207,38 @@ class Dinner:
     def CalcRiceAndRoti(self,day):
         AttaInKg = self.TotRoti/25.0 
         RiceInKg = (self.TotBaseMeal*0.14 - AttaInKg)
-        
-        if day == 'Saturday':
+        isSplBase = False
+        if(DinnerBaaji_dict[day]['Spl_Base'] != "None"):
+            isSplBase = True
+        if(DinnerBaaji_dict[day]['Spl_Base'] == "Kichadi" and isSplBase == True):
             print('Today is Kichadi, Sorry :(')
-            print(f'Rice :  {80*self.TotBaseMeal/1000} Kg')
-            print(f'Mung Daal : {80*self.TotBaseMeal/1000} Kg')
-            print(f'Cauliflower : {0.010*self.TotBaseMeal} Kg')
-            print(f'Beans : {0.010*self.TotBaseMeal} Kg')
-            print(f'Gajjar : {0.005*self.TotBaseMeal} Kg')
+            SplBase_dict = DinnerBaaji_dict[day]['SplBaseIngri']
+            for item,qty in SplBase_dict.items():
+                Qty = qty*self.TotBaseMeal
+                print(f'{item} : {Qty/1000} Kg')
+            # print(f'Rice :  {80*self.TotBaseMeal/1000} Kg')
+            # print(f'Mung Daal : {80*self.TotBaseMeal/1000} Kg')
+            # print(f'Cauliflower : {0.010*self.TotBaseMeal} Kg')
+            # print(f'Beans : {0.010*self.TotBaseMeal} Kg')
+            # print(f'Gajjar : {0.005*self.TotBaseMeal} Kg')
             print('Atta : ',AttaInKg,' Kg for ',self.TotRoti,' people')
             print(f'Base Meal {self.TotBaseMeal-4} + 4 = {self.TotBaseMeal}')
             print(f'No. of Roti {self.TotRoti}')
-        elif day == 'Sunday':
+        elif(DinnerBaaji_dict[day]['Spl_Base'] == "Fried Rice" and isSplBase == True):
             print('Hooray Today is Fried Rice')
             print('Atta : ',AttaInKg,' Kg for ',self.TotRoti,' people')
             print('Jeera Rice : ',RiceInKg, ' Kg for ',self.TotBaseMeal,' people')
+            SplBase_dict = DinnerBaaji_dict[day]['SplBaseIngri']
+            for item,qty in SplBase_dict.items():
+                Qty = qty*self.TotBaseMeal
+                print(f'{item} : {Qty/1000} Kg')
             print(f'Base Meal {self.TotBaseMeal-4} + 4 = {self.TotBaseMeal}')
             print(f'No. of Roti {self.TotRoti}')
-            print('Beans for Fried Rice: ',10*self.TotBaseMeal/1000,' Kg')
-            print('Gobi for Fried Rice: ',10*self.TotBaseMeal/1000,' Kg')
-            print('Gajjar for Fried Rice: ',10*self.TotBaseMeal/1000,' Kg')
-            print('Grean Peas for Fried Rice: ',5*self.TotBaseMeal/1000,' Kg')
+
+            # print('Beans for Fried Rice: ',10*self.TotBaseMeal/1000,' Kg')
+            # print('Gobi for Fried Rice: ',10*self.TotBaseMeal/1000,' Kg')
+            # print('Gajjar for Fried Rice: ',10*self.TotBaseMeal/1000,' Kg')
+            # print('Grean Peas for Fried Rice: ',5*self.TotBaseMeal/1000,' Kg')
 
         else:
             print('Atta : ',AttaInKg,' Kg for ',self.TotRoti,' people')
