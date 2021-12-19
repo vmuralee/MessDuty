@@ -274,8 +274,9 @@ class Dinner:
 
     def CalcSplNonVeg(self,day):
         NonVegDict = DinnerNonVeg_dict[day]['Ingridients']
-        if day == 'Saturday':
-            print(f'No. of Egg :  {self.TotNonVeg}')
+        dish = DinnerNonVeg_dict[day]['Name']
+        if dish == 'Egg Omlet' or dish == 'Egg-Alu-Jhol':
+            print(f'No. of Egg :  {2*self.TotNonVeg}')
         else:
             for non,qty in NonVegDict.items():
                 Qty = qty*self.TotNonVeg

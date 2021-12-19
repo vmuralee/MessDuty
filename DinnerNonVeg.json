@@ -5,7 +5,7 @@
     },
     "Monday":{
         "Name":"Egg-Alu-Jhol",
-        "Ingridients":{"Egg":0}
+        "Ingridients":{"Egg":2}
     },
     "Tuesday":{
         "Name":"Chicken-Alu-Jhol",
@@ -25,6 +25,6 @@
         },
     "Saturday":{
         "Name":"Egg Omlet",
-        "Ingridients":{"Egg":0}
+        "Ingridients":{"Egg":2}
         }
  }
