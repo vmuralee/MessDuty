@@ -227,7 +227,7 @@ class Dinner:
         elif(DinnerBaaji_dict[day]['Spl_Base'] == "Fried Rice" and isSplBase == True):
             print('Hooray Today is Fried Rice')
             print('Atta : ',AttaInKg,' Kg for ',self.TotRoti,' people')
-            print('Jeera Rice : ',RiceInKg, ' Kg for ',self.TotBaseMeal,' people')
+            print('Jeera Rice : ',RiceInKg*1.2, ' Kg for ',self.TotBaseMeal,' people')
             SplBase_dict = DinnerBaaji_dict[day]['SplBaseIngri']
             for item,qty in SplBase_dict.items():
                 Qty = qty*self.TotBaseMeal

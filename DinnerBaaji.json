@@ -56,7 +56,7 @@
     "Saturday":{
         "Name":"Brinjal Fry",
         "Spl_Base":"Kichadi",
-        "SplBaseIngri":{"Rice":80,"Moong Dal":80,"CauliFlower":10,"Beans":10,"Gajjar":5},
+        "SplBaseIngri":{"Rice":75,"Moong Dal":75,"CauliFlower":10,"Beans":10,"Gajjar":5},
         "Desert Name":"Fruit Chutney",
         "Ingridients":{"Brinjal":100},
         "Daal" : {"Arhad Dal": 30},
