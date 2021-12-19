@@ -9,7 +9,7 @@
         "Name" : "Alu-Kela Fry",
         "Ingridients":{"kela":120},
         "Daal" : {"Arhad Daal":35,"Patal":10,"Papita":20,"began":10,"beans":10},
-        "Salaad":{"Kukkudi":500,"Dahi":1500}
+        "Salaad":{"Kukkudi":10,"Dahi":30}
     },
     "Tuesday":{
         "Name" : "Beans Fry",

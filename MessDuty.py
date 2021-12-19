@@ -139,7 +139,7 @@ class Lunch:
             print('Lemon   : 7 pieces')
         else:
             for veg,qty in SaaladDict.items():
-                Qty = qty*self.TotSplVeg
+                Qty = qty*self.TotBaseMeal
                 print(f'{veg} : {Qty/1000} Kg')
         
 

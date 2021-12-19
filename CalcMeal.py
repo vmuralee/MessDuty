@@ -14,8 +14,8 @@ today = date.today()
 '''
 
 
-isPaapad = True  # Check the boolean with your specific day
-isSaalad = True  # Check the boolean with your specific day
+isPaapad = False  # Check the boolean with your specific day
+isSaalad = False  # Check the boolean with your specific day
 
 print("The Order List of ",today," menu are following")
 
