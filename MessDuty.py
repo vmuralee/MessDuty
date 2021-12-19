@@ -9,7 +9,7 @@ import json
 from typing import DefaultDict
 
 Fastdays = ['Monday','Thursday','Saturday']
-days     = ['Monday','Tuesday','Wednesday','Thursday','Saturday','Sunday']
+days     = ['Monday','Tuesday','Wednesday','Thursday','Saturday','Friday','Sunday']
 
 file0 = open("BreakFast.json")
 
@@ -134,9 +134,8 @@ class Lunch:
     def CalcSalad(self,day):
         SaaladDict = LunchBaaji_dict[day]['Salaad']
         if self.isSaalad == True:
-            print('Kakkudi : 1 kg')
-            print('Gajar   : 1 Kg')
-            print('Lemon   : 7 pieces')
+            for veg,qty in SaaladDict.items():
+                print(f'{veg} : {qty}')
         else:
             for veg,qty in SaaladDict.items():
                 Qty = qty*self.TotBaseMeal

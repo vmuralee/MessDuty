@@ -14,8 +14,8 @@ today = date.today()
 '''
 
 
-isPaapad = False  # Check the boolean with your specific day
-isSaalad = False  # Check the boolean with your specific day
+isPaapad = True  # Check the boolean with your specific day
+isSaalad = True  # Check the boolean with your specific day
 
 print("The Order List of ",today," menu are following")
 
@@ -35,6 +35,6 @@ try:
     dinner.DinnerSummary(day,0)
     dinner.ListOfDinner(day)
 except:
-    print("Give the argument day such as Monday,Tuesday,Wednesday,Thursday,Saturday,Sunday")
+    print("Give the argument day such as Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday")
 
 
