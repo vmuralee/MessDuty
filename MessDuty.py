@@ -21,6 +21,8 @@ file4 = open("DinnerBaaji.json")
 file5 = open("DinnerNonVeg.json")
 file6 = open("DinnerSplVeg.json")
 
+file7 = open("GrandDinnerMenu.json")
+
 
 
 
@@ -34,6 +36,7 @@ DinnerBaaji_dict  = json.load(file4)
 DinnerNonVeg_dict = json.load(file5)
 DinnerSplVeg_dict = json.load(file6)
 
+GrandDinner_dict = json.load(file7)
 
 class BreakFast:
     def __init__(self,nBread,nEggs,nKela,nTea,nMilk,nIndian):
@@ -317,8 +320,74 @@ class Dinner:
         print(f'No. of desert {desert}')
 
 
+class GrandDinner:
+    def __init__(self,nTot,nChickenBiriyani,nVegBiriyani,nSplNonVeg,nSplVeg,nParata):
+        Buffer = 5
+        self.nSplNonVeg = nSplNonVeg + 4 + Buffer
+        self.nSplVeg = nSplVeg + Buffer
+        self.nTot = nTot + 4 + Buffer
+        self.nChickenBiriyani = nChickenBiriyani + 4 + Buffer
+        self.nVegBriyani = nVegBiriyani + Buffer
+        self.nParata = nParata + 4 + Buffer
 
-        
+    def CalcRiceAndParata(self):
+        RiceInGram = self.nChickenBiriyani*GrandDinner_dict['Chicken Biriyani']['Rice']+self.nVegBriyani*GrandDinner_dict['Veg Biriyani']['Rice']
+        RiceInKg = RiceInGram/1000
+        AttaInKg = self.nParata*GrandDinner_dict['Atta']/1000
+
+        print("Biriyani Rice : ",RiceInKg)
+        print("Atta for Parata : ",AttaInKg)
+        print("Vegetable for Biriyani")
+        for item,qty in GrandDinner_dict['Veg Biriyani'].items():
+            if item != 'Rice':
+                Qty = qty*self.nTot/1000
+                print(f'{item} : {Qty} Kg')
+                
+
+    def CalcDaal(self):
+        for item,qty in GrandDinner_dict['Daal Makhani'].items():
+            Qty = qty*self.nTot/1000
+            print("Items for Daal Makhini")
+            print(f'{item} : {Qty} Kg')
+
+    def CalcChicken(self):
+        ChickenInGram = self.nChickenBiriyani*GrandDinner_dict['Chicken Biriyani']['Chicken'] + self.nSplNonVeg*GrandDinner_dict['SplNonVeg']['Chicken']
+        ChickenInKg = ChickenInGram/1000
+        print('Total Chicken : ',ChickenInKg,' Kg')
+
+    def CalcVeg(self):
+        for item,qty in GrandDinner_dict['SplVeg'].items():
+            Qty = qty*self.nSplVeg/1000
+            print(f'{item} : {Qty} Kg')
+
+    def PakodaAndSalad(self):
+        for item,qty in GrandDinner_dict['Pakoda'].items():
+            Qty = qty*self.nTot/1000
+            print(f'{item} : {Qty} Kg')
+        print('Kakudi : 1 Kg')
+        print('Gajjar : 1 Kg')
+
+    def CalcRaitaAndChutney(self):
+        print('Items For Raita')
+        for item,qty in GrandDinner_dict['Raita'].items():
+            Qty = qty*self.nTot/1000
+            print(f'{item} : {Qty} Kg')
+        print('\nItems for Chutney')
+        for item,qty in GrandDinner_dict['Chutney'].items():
+            Qty = qty*self.nTot/1000
+            print(f'{item} : {Qty} Kg')
+
+    def PrintListItems(self):
+        self.CalcRiceAndParata()
+        self.CalcDaal()
+        self.CalcChicken()
+        self.CalcVeg()
+        self.PakodaAndSalad()
+        self.CalcRaitaAndChutney()
+
+
+
+
 
 
     

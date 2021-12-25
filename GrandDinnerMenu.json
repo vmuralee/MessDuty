@@ -1,0 +1,11 @@
+{
+   "Chicken Biriyani" : {"Rice":135,"Chicken":150},
+   "Veg Biriyani":{"Rice":135,"Gobi":20,"Gajjar":5},
+   "Daal Makhani" : {"Biri daal":15,"Arhad daal":15},
+   "Pakoda": {"Gobi":50,"Besan":20},
+   "Raita" : {"Dahi":30,"Kakkudi":10,"Tomato":5},
+   "SplNonVeg" : {"Chicken":150},
+   "SplVeg" : {"Paneer":170,"Butter":10},
+   "Chutney" :{"Pineapple":70},
+   "Atta" : 40
+}
